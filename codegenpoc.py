@@ -10,8 +10,8 @@ openai_api_key = st.text_input("Enter your OpenAI API key", type="password")
 openai.api_key = openai_api_key
 
 # Securely input GitHub credentials
-github_username = st.text_input("GitHub Username")
-github_password = st.text_input("GitHub Password", type="password")
+#github_username = st.text_input("GitHub Username")
+#github_password = st.text_input("GitHub Password", type="password")
 
 def generate_code(data_summary, language, model="gpt-3.5-turbo"):
     try:
