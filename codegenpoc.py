@@ -85,7 +85,7 @@ def execute_generated_code(code, data):
 # Streamlit UI
 #st.title("CodeCraftAI")
 
-logo_url = "https://github.com/raviska/CodeCraft-AI/edit/main/compunnel.png"  # Replace with your logo URL or local path
+logo_url = "https://github.com/raviska/CodeCraft-AI/blob/221102590a196f6b00df6bdf89c1ee5f4e307c94/compunnel.png"  # Replace with your logo URL or local path
 logo = st.columns([2, 5])  # Adjust the ratio as needed
 
 with logo[0]:
