@@ -9,7 +9,7 @@ import contextlib
 #github_username = st.text_input("GitHub Username")
 #github_password = st.text_input("GitHub Password", type="password")
 
-def generate_code(data_summary, language, model="gpt-3.5-turbo"):
+def generate_code(data_summary, language, model="gpt-3.5-turbo-1106"):
     try:
         response = openai.ChatCompletion.create(
             model=model,
