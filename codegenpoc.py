@@ -5,10 +5,6 @@ import io
 import sys
 import contextlib
 
-# Securely input OpenAI API key
-openai_api_key = st.text_input("Enter your OpenAI API key", type="password")
-openai.api_key = openai_api_key
-
 # Securely input GitHub credentials
 #github_username = st.text_input("GitHub Username")
 #github_password = st.text_input("GitHub Password", type="password")
@@ -98,7 +94,9 @@ with logo[0]:
 
 with logo[1]:
     st.title("CodeCraft AI")
-
+# Securely input OpenAI API key
+openai_api_key = st.text_input("Enter your OpenAI API key", type="password")
+openai.api_key = openai_api_key
 
 
 problem_description = st.text_area("Describe the problem or task for the code:")
