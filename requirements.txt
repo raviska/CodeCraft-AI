@@ -1,6 +1,7 @@
-openai
-streamlit
+openai==0.28.0
+streamlit==1.28.1
 pandas
 io
 sys
 contextlib
+
