@@ -5,8 +5,13 @@ import io
 import sys
 import contextlib
 
-# Set your OpenAI API key
-openai.api_key = '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'
+# Securely input OpenAI API key
+openai_api_key = st.text_input("Enter your OpenAI API key", type="password")
+openai.api_key = openai_api_key
+
+# Securely input GitHub credentials
+github_username = st.text_input("GitHub Username")
+github_password = st.text_input("GitHub Password", type="password")
 
 def generate_code(data_summary, language, model="gpt-3.5-turbo"):
     try:
