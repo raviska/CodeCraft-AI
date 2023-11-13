@@ -1,7 +1,6 @@
 import openai
 import streamlit as st
 import pandas as pd
-import io
 import sys
 import contextlib
 
