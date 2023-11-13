@@ -1,11 +1,12 @@
 import openai
 import streamlit as st
 import pandas as pd
+import io
 import sys
 import contextlib
 
 # Set your OpenAI API key
-openai.api_key = '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'
+openai.api_key = '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'
 
 def generate_code(data_summary, language, model="gpt-3.5-turbo"):
     try:
